@@ -136,13 +136,34 @@
 
 
 
-let stu = document.querySelectorAll(".student");
-let pre = document.querySelectorAll(".present");
-pre.forEach(function(p){
-  p.addEventListener("click", function(){
-    let student = p.parentElement;
-    student.style.background = "lightgrey";
-  })
+// let stu = document.querySelectorAll(".student");
+// let pre = document.querySelectorAll(".present");
+// pre.forEach(function(p){
+//   p.addEventListener("click", function(){
+//     let student = p.parentElement;
+//     student.style.background = "lightgrey";
+//   })
+// })
+
+
+
+// let Dbutton = document.querySelectorAll(".dbtn");
+// Dbutton.forEach(btn=>{
+//   btn.addEventListener("click",()=>{
+//     btn.parentElement.remove();
+//   })
+// })
+
+
+let clare = document.querySelector("#4button");
+
+clare.addEventListener("click",()=>{
+  let not = document.querySelectorAll(".notification");
+  not.forEach(item=>{
+    item.remove();
+
+  });
+  document.querySelector("#total").textContent = 0;
 })
 
 
