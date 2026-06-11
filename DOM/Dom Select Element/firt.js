@@ -155,15 +155,95 @@
 // })
 
 
-let clare = document.querySelector("#4button");
+// let clare = document.querySelector("#4button");
 
-clare.addEventListener("click",()=>{
-  let not = document.querySelectorAll(".notification");
-  not.forEach(item=>{
-    item.remove();
+// clare.addEventListener("click",()=>{
+//   let not = document.querySelectorAll(".notification");
+//   not.forEach(item=>{
+//     item.remove();
 
-  });
-  document.querySelector("#total").textContent = 0;
-})
+//   });
+//   document.querySelector("#total").textContent = 0;
+// })
+
+
+// let city = document.getElementById("city");
+// let temp = document.getElementById("temp");
+// document.getElementById("update").addEventListener("click",()=>{
+
+//   city.innerText="Lahore";
+//   temp.innerText="40 C";
+// })
+
+// let box = document.querySelectorAll(".box");
+// for (i of box ){
+//   i.innerText=prompt("enter name ")
+    
+// }
+
+
+// let img = document.querySelector("#link");
+// let link = img.getAttribute("href")
+// console.log(link)
+
+// let set = img.setAttribute("href","linker")
+// console.log(set)
+
+
+
+
+// let button = document.createElement("button");
+// button.innerText= "Click me !";
+
+// let para = document.createElement("p")
+// console.log(para.innerText="this is a paragraph")
+
+
+// let box = document.querySelector(".box");
+
+
+// box.append(button);
+
+// box.after(para);
+// para.remove()
+
+
+
+
+
+
+// let button = document.createElement("button");
+// button.innerText= "Click me !";
+
+// button.style.background="red";
+// button.color="white";
+// document.querySelector("body").prepend(button)
+
+
+// let paragraph = document.querySelector(".para");
+
+// paragraph.setAttribute("class","para1")
+
+// paragraph.classList.add("para1")
+
+// let pp=paragraph.hasAttribute(".para")
+// console.log(pp)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
