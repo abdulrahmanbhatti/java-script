@@ -36,5 +36,34 @@ cursor: pointer;
 }
 
 #list{
-    
+    width: 100%;
+    background:rgba(255,255,255,0.7);
+    border-radius: 6px;
+    overflow: hidden;
 }
+.option{
+   width: 100%;
+   padding: 15px 0 15px 70px; 
+   list-style: none;
+   cursor: pointer;
+   box-sizing: border-box;
+   position: relative;
+
+
+
+}
+
+.option img{
+    width: 25px;
+    position: absolute;
+    top: 12px;
+    left: 25px;
+}
+
+.option:hover{
+background-color:rgba(255,255,255,0.7);
+}
+
+/* .hide{
+    visibility: hidden;
+} */

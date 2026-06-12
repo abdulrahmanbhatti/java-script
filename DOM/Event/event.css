@@ -1,0 +1,63 @@
+/* div{
+  height: 100px;
+  width: 100px;
+
+  background-color: aqua;
+  color: white;
+  border-radius: 6px;
+} */
+
+/* body{
+  background-color: white;
+}
+
+.dark{
+background-color: black;
+color: white;
+}
+.light{
+  background-color: white;
+  color: black;
+} */
+.container {
+display: flex;
+height: 100vh;
+justify-content: center;
+align-items: center;
+
+}
+.heading{
+height: 45px;
+background-color: rgb(55, 55, 105);
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.box {
+  width: 360px;
+  height: 360px;
+
+  /* background-color: white; */
+}
+.box input {
+margin: 10px 15px;
+  font-size: 20px;
+  padding: 15px 10px;
+  border: 6px;
+  outline: none;
+}
+
+.box h1{
+ margin: 20px;
+ padding: 15px
+}
+
+.box button{
+  margin-left:15px ;
+
+}
+
+
