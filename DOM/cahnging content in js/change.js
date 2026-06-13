@@ -98,3 +98,58 @@
 //     temp.innerText="20C";
 
 // });
+
+// let para = document.getElementById("mes");
+// let btn = document.getElementById("btn");
+
+// btn.addEventListener("click",()=>{
+//     if(para.innerText==="Welcome"){
+//         para.innerText="";
+//         btn.innerText="show message"
+//     }
+//     else{
+//         para.innerText="welcome user";
+//         btn.innerText="hide message"
+//     }
+// })
+
+
+// let div = document.getElementById("container");
+// let btn = document.getElementById("btn");
+
+// btn.addEventListener("click",()=>{
+//     const para = document.createElement("p");
+//     para.innerText="hello";
+// div.appendChild(para)
+
+// })
+
+
+
+// let input = document.getElementById("in");
+// let btn = document.getElementById("btn");
+// let divs = document.getElementById("list");
+
+
+// btn.addEventListener("click",()=>{
+//     if(input.value ==="")return;
+
+
+//     const li = document.createElement("li");
+
+//     li.textContent=input.value;
+
+
+//     const deleteBtn = document.createElement("button");
+//     deleteBtn.textContent="Delete";
+
+//     deleteBtn.addEventListener("click",()=>{
+//         li.remove();
+
+//     });
+//     li.appendChild(deleteBtn);
+//     divs.appendChild(li);
+//     input.value="";
+
+
+// })
