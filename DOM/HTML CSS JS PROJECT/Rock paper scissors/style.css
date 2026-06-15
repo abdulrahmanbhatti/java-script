@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    /* background-image: linear-gradient(#f44336,#730228); */
+    cursor: pointer;
+    height:100vh;
+    text-align: center;
+}
+
+
+nav{
+  
+    background: black;
+    height: 50px;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+nav h3{
+    font-size: 35px;
+}
+
+.img img {
+    height:100px;
+    width: 100px;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+
+
+
+}
+.img img:hover{
+    opacity: 0.5;
+}
+
+section{
+    
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.content{
+   gap: 5rem;  
+}
+.content p {
+    margin: 10px;
+    font-size: 2rem;
+
+}
+
+.result-container{
+    height: 200px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result{
+    height: 30px;
+    left: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(12, 12, 12);
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+
+.result-container .selectField{
+    margin-left: 20px;
+    height: 25px;
+    padding: 15px;
+    border: 2px;
+    background-color:black;
+    border-radius: 10px;
+  
+    
+    
+}
+.selectField #selectText{
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    border: 2px;
+}
+
+
+.div{
+    /* background: aqua; */
+    width: 600px;
+} 
+.main-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.option{
+    /* width: 100%; */
+    margin: 15px;
+    list-style: none;
+    
+}
+#lister{
+     background-image: linear-gradient(#e9d3d1,#fcc2d6);
+    height: 250px;
+    width:100px ;
+    border: 2px solid black;
+    margin-left: 350px;
+}
+#lister p{
+    font-size: 1.5rem;
+}
+
+.hide{
+    visibility: hidden;
+}

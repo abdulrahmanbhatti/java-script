@@ -23,6 +23,25 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    position: relative;
+   
+
+}
+#btn1{
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    right: 0;
+    position: absolute;
+    border-radius: 10px;
+    background: #ff5945;
+    padding: 16px,50px;
+    font-size: 1rem;
+    width: 4rem;
+   
+}
+.btnC{
+ visibility: hidden;
 
 }
 .todo_app h2 img{
@@ -61,6 +80,7 @@
 }
 
 
+
 ul li {
     list-style: none;
     font-size: 1rem;
@@ -72,8 +92,8 @@ ul li {
 ul li::before{
     content: '';
     position: absolute;
-    width: 28px;
-    height: 28px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
    background-color: #eee;
     background-image: url("./images/unchecked.png");
@@ -88,4 +108,22 @@ ul li.checked{
 }
 ul li.checked::before{
     background-image: url("images/checked.png");
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+
+
+}
+ul li span:hover{
+    background: #edeef0;
 }

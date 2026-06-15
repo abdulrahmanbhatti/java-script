@@ -121,20 +121,20 @@
 
 
 
-let length = prompt("enter your Length")
+// let length = prompt("enter your Length")
 
-let arr = [];
+// let arr = [];
 
-for(let i = 0 ; i<length;i++){
-  let   array=prompt(" enter your array data ");
-  arr.push(array);
+// for(let i = 0 ; i<length;i++){
+//   let   array=prompt(" enter your array data ");
+//   arr.push(array);
 
-}
+// }
 
 
-arr.forEach ((number)=>{
-    let squ =(number*number);
-    console.log(squ)
-    }
+// arr.forEach ((number)=>{
+//     let squ =(number*number);
+//     console.log(squ)
+//     }
 
-)
+// )
