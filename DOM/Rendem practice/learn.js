@@ -140,7 +140,9 @@
 // )
 
 
-document.addEventListener("DOMContentLoaded",()=>{
-    const total = 300;
-    document.getElementById("user").textContent=total;
-});
+// ocument.addEventListener("DOMContentLoaded",()=>{
+//     const total = 300;
+//     document.getElementById("user").textContent=total;
+// });d
+
+
