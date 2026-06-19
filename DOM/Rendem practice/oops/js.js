@@ -22,7 +22,33 @@
 
 // class & object
 
-class car {
-    
+class student {
+    calavg(){
+        let eng=Number(prompt("enter your english marks "));
+        let com = Number(prompt("enter your computer marks "));
+        let math =Number(prompt("enter your math marks "));
+        let avg = (eng+com+math)/3;
+        console.log(`your marks avg is ${avg}`);
+    }
+
+    semester(){
+        let depart = "IS";
+        let semesters="five";
+        console.log(`${depart} and ${semesters}`)
+
+    }
+
 }
+
+let st1 = new student();
+st1.calavg();
+
+let st2= new student();
+st2.semester();
+
+
+
+
+
+
 // class & object
