@@ -1,3 +1,115 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Live Weather App</title>
+    <style>
+        /* UI ko thoda khoobsurat banane ke liye simple design */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .weather-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 350px;
+        }
+        input {
+            padding: 10px;
+            width: 70%;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover { background-color: #0056b3; }
+        .result { margin-top: 20px; font-size: 18px; } 
+        .error { color: red; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="weather-card">
+    <h2>🌤️ Live Weather App</h2>
+    
+    <input type="text" id="cityInput" placeholder="Enter City/Country Name">
+    <button onclick="getLiveWeather()">Search</button>
+
+    <div id="weatherResult" class="result"></div>
+</div>
+
+<script>
+// Yeh humara main Async/Await function hai
+async function getLiveWeather() {
+    const city = document.getElementById("cityInput").value;
+    const resultDiv = document.getElementById("weatherResult");
+    
+    // Agar input khali ho
+    if (!city) {
+        resultDiv.innerHTML = "<p class='error'>Please enter a city name!</p>";
+        return;
+    }
+
+    resultDiv.innerHTML = "<p>Searching... 🔄</p>";
+
+    try {
+        // STEP 1: Pehle sheher ke naam se uski Latitude aur Longitude pata karenge
+        let geoResponse = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${city}&count=1&language=en&format=json`);
+        let geoData = await geoResponse.json();
+
+        // Agar sheher ka naam galat ho aur data na mile
+        if (!geoData.results || geoData.results.length === 0) {
+            resultDiv.innerHTML = "<p class='error'>Sheher ya Country nahi mili. Sahi naam likhein!</p>";
+            return;
+        }
+
+        // Sheher ki location mil gayi
+        let lat = geoData.results[0].latitude;
+        let lon = geoData.results[0].longitude;
+        let officialName = geoData.results[0].name;
+        let country = geoData.results[0].country || "";
+
+        // STEP 2: Ab is exact location ka weather data fetch karenge
+        let weatherResponse = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`);
+        let weatherData = await weatherResponse.json();
+
+        let temp = weatherData.current_weather.temperature;
+        let wind = weatherData.current_weather.windspeed;
+
+        // STEP 3: UI par data show karna
+        resultDiv.innerHTML = `
+            <h3>📍 ${officialName}, ${country}</h3>
+            <p><strong>Temperature:</strong> ${temp}°C</p>
+            <p><strong>Wind Speed:</strong> ${wind} km/h</p>
+        `;
+
+    } catch (error) {
+        // Agar internet ka koi masla ho
+        resultDiv.innerHTML = "<p class='error'>Server se connect nahi ho saka. Dobara try karein!</p>";
+        console.error(error);
+    }
+}
+</script>
+
+</body>
+</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +118,7 @@
     <title>Document</title>
 </head>
 <body>
-    
-
-
-    <script src="js.js"></script>
+    <!-- <script src="promasies.js"></script> -->
+     <script src="asyncAwait.js"></script>
 </body>
 </html>
